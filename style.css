@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.sidebar{
+    display: grid;
+    grid-template-rows: .5fr 1fr 1fr;
+    background-color: olive;
+}
+.logo{
+    grid-row: 1;
+    text-align: center;
+}
+.firstSix{
+    grid-row: 2;
+    text-align: center;
+}
+.lastThree{
+    grid-row: 3;
+    text-align: center;
+}
+.rightSide{
+    display: grid;
+    grid-template-rows: 100px 4fr;
+}
+.header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 50% 50%;
+    background-color: navy;
+    height: 100px;
+}
+.topHeader{
+    grid-column: 1/-1;
+}
+.bottomHeader{
+    grid-column: 1/-1;
+}
+.bottomSec{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: tan;
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column: 1;
+    gap: 15px;
+}
+.projects p{
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: left;
+}
+.projects .card{
+    background-color: navy;
+    color: white;
+    text-align: center;
+    height: 200px;
+    margin-bottom: 15px;
+}
+.card p{
+    color: white;
+  font-weight: normal;
+  font-size: 14px;
+}
+.card .title {
+    font-size: 18px;
+    text-align: left;
+  }
+.bodyRight{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+.announcements{
+    grid-row: 1;
+    text-align: center;
+}
+.trending{
+    grid-row: 2;
+    text-align: center;
+}
