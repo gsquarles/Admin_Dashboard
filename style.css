@@ -9,19 +9,61 @@
 .sidebar{
     display: grid;
     grid-template-rows: .5fr 1fr 1fr;
-    background-color: olive;
+    background-color: #38bdf8;
 }
 .logo{
     grid-row: 1;
     text-align: center;
 }
+.dashLogo{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: 10px;
+}
 .firstSix{
     grid-row: 2;
     text-align: center;
 }
+.firstSix p, .lastThree p{
+    padding: 7px;
+    font-size: 18px;
+}
 .lastThree{
     grid-row: 3;
     text-align: center;
+}
+p > img{
+    position: relative;
+    top: 5px;
+    right: 28px;
+    height: 25px;
+    width: 25px;
+    
+}
+.profilePic{
+    position: relative;
+    right: 30px;
+}
+.homePic{
+    position: relative;
+    right: 35px;
+}
+.messagePic{
+    position: relative;
+    right: 23px;
+}
+.historyPic{
+    position: relative;
+    right: 33px;
+}
+.taskPic{
+    position: relative;
+    right: 37px;
+}
+.comPic{
+    position: relative;
+    right: 12px;
 }
 .rightSide{
     display: grid;
@@ -29,21 +71,61 @@
 }
 .header{
     display: grid;
-    grid-template-columns: 2fr 1fr;
     grid-template-rows: 50% 50%;
-    background-color: navy;
+    background-color: white;
     height: 100px;
 }
+.topInfo{
+    grid-column: 2/3;
+}
+
 .topHeader{
-    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.searchInfo{
+    grid-column: 1/2;
+}
+.magnify{
+    position: relative;
+    top: 8px;
+    height: 25px;
+    width: 25px;
+}
+input{
+    width: 300px;
+    height: 20px;
+    border-radius: 10px;
 }
 .bottomHeader{
-    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/2;
+}
+.bottomInfo{
+    grid-column: 1/2;
+    width: 400px;
+}
+.buttonGroup{
+    position: relative;
+    bottom: 10px;
+    left: 140px;
+    grid-column: 2/3; 
+}
+button{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #38bdf8;
+    
 }
 .bottomSec{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    background-color: tan;
+    background-color: #cbd5e1;
+    gap: 15px;
+    padding-left: 15px;
 }
 .projects{
     display: grid;
@@ -57,14 +139,15 @@
     text-align: left;
 }
 .projects .card{
-    background-color: navy;
-    color: white;
+    background-color: white;
+    color: black;
     text-align: center;
     height: 200px;
     margin-bottom: 15px;
+    border-radius: 5px;
 }
 .card p{
-    color: white;
+    color: black;
   font-weight: normal;
   font-size: 14px;
 }
@@ -75,13 +158,30 @@
 .bodyRight{
     grid-column: 2/3;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 30px 1fr;
+    gap: 40px;
+    margin-right: 15px;
   }
 .announcements{
     grid-row: 1;
     text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    
 }
 .trending{
-    grid-row: 2;
+    grid-row: 3;
     text-align: center;
+    background-color: white;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.trend{
+    grid-row: 2/3;
+    margin-top: 35px;
+}
+h1{
+    font-size: 22px;
 }
