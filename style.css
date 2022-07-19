@@ -74,14 +74,30 @@ p > img{
     grid-template-rows: 50% 50%;
     background-color: white;
     height: 100px;
+    padding-left: 10px;
 }
 .topInfo{
     grid-column: 2/3;
+    position: relative;
+    left: 200px;
+    font-size: 25px;
 }
 
 .topHeader{
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+.sIcon{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: 5px;
+}
+.bell{
+    height: 25px;
+    width: 25px;
+    position: relative;
+    right: 3px;
 }
 .searchInfo{
     grid-column: 1/2;
@@ -101,6 +117,16 @@ input{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column: 1/2;
+}
+.bIcon{
+    height: 60px;
+    width: 60px;
+    position: relative;
+    bottom: 10px;
+}
+.bInfo{
+    position: relative;
+    bottom: 40px;
 }
 .bottomInfo{
     grid-column: 1/2;
